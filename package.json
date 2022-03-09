@@ -1,10 +1,11 @@
 {
   "name": "reverse-sentence",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Reverses the words of a sentence. ## Install ```sh npm install @npmusername/reverse-sentence ``` ## API ```js require(\"reverse-sentence\") => Function reverse(sentence) => String ``` ## Example ```js const reverseSentence = require(\"reverse-sentence\"); const sentence = \"Hello Beth!\";  const reversed = reverseSentence(sentence);  console.log(reversed) // Beth! Hello ``` ## License MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rschwarz24/reverse-sentence/issues"
   },
-  "homepage": "https://github.com/rschwarz24/reverse-sentence#readme"
+  "homepage": "https://github.com/rschwarz24/reverse-sentence#readme",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
 }
